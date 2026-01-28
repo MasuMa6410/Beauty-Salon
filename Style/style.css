@@ -6,13 +6,13 @@
 
 /* Header full-width, white background, shadow and fixed */
 nav.navbar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
     background: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    z-index: 1030;
+    z-index: 1030 !important;
 }
 
 /* Make the inner navbar content 90% wide and centered */
@@ -150,9 +150,71 @@ nav.navbar>.container {
     }
 }
 
+/* ===== Services Section ===== */
+
+.services.section-bg {
+    background-color: #fafafa;
+}
+
+
+/* Icon box */
+.services .icon-box {
+    background: #ffffff;
+    padding: 30px 30px 30px 90px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.services .icon-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.services .icon-box:hover h4 a {
+    color: #3498db;
+}
+
+/* Icons */
+.services .icon-box i {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 32px;
+    color: #3498db;
+    line-height: 1;
+}
+
+/* Title */
+.services .icon-box h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.services .icon-box h4 a {
+    color: #1f2d3d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* .services .icon-box h4 a:hover {
+    color: #3498db;
+} */
+
+/* Description */
+.services .icon-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+
 /* gallerys Section */
 .gallerys-section {
-    background-color: #fafafa;
+    background-color: #f8fbff;
 }
 
 .gallerys-container {
@@ -257,6 +319,81 @@ nav.navbar>.container {
     background-color: #3498db;
 }
 
+/* Testimonials Section */
+
+.testimonials {
+    background: #fafafa;
+}
+
+.testimonials-section {
+    max-width: 80%;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.section-subtitle {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    height: 100%;
+}
+
+.quote-icon-start {
+    font-size: 2rem;
+    color: #3498db;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.quote-icon-end {
+    font-size: 2rem;
+    color: #3498db;
+    line-height: 1;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.client-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.client-role {
+    font-size: 0.85rem;
+    color: #9aa0a6;
+}
+
+
+.booking-section {
+    background-color: #f8fbff !important;
+}
+
 .booking-section form button {
     background-color: #3498db;
     color: #fff;
@@ -308,4 +445,101 @@ nav.navbar>.container {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* Footer Section */
+
+/* Footer Styles */
+.footer-first {
+    background-color: #fafafa;
+}
+
+.footer-second {
+    background-color: #f8fbff;
+}
+
+.footer-first h3,
+.footer-first h4 {
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-first .description {
+    font-size: 14px;
+    color: #384046;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-first .contact {
+    font-size: 14px;
+}
+
+.footer-first ul li i {
+    font-size: 12px;
+    color: #3498db;
+}
+
+
+footer div h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+footer div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #384046;
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+}
+
+footer div ul li a:hover {
+    color: #3498db !important;
+}
+
+/* Make footer links match header nav hover + underline animation */
+footer div ul li a {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+footer div form input {
+    width: 60%;
+}
+
+footer div form button {
+    background-color: #5faee3 !important;
+    color: white !important;
+}
+
+footer div p .salon-name {
+    color: #5faee3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.footer-second div ul li a .round {
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+
+    margin-right: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.footer-second div ul li a .round:hover {
+    color: white;
+    background-color: #5faee3;
+    cursor: pointer;
 }
