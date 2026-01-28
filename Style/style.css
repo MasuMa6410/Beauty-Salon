@@ -156,6 +156,10 @@ nav.navbar>.container {
     background-color: #fafafa;
 }
 
+.service-section {
+    max-width: 80%;
+}
+
 
 /* Icon box */
 .services .icon-box {
