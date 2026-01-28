@@ -203,10 +203,6 @@ nav.navbar>.container {
     transition: color 0.3s;
 }
 
-/* .services .icon-box h4 a:hover {
-    color: #3498db;
-} */
-
 /* Description */
 .services .icon-box p {
     font-size: 14px;
@@ -453,7 +449,6 @@ nav.navbar>.container {
 
 /* Footer Section */
 
-/* Footer Styles */
 .footer-first {
     background-color: #fafafa;
 }
